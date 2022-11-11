@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="select">
+    <select id="genres">
+        <option value="rock">РОК</option>
+        <option value="blues" selected>Блюз</option>
+    </select>
+</div>
+
+<div class="redaktdiv">
+        <ul>
+            <li>Кликните на div ниже, чтобы отредактировать текст.</li>
+            <li>Нажатие на Enter или потеря фокуса с ввода сохранят содержимое.</li>
+        </ul>
+        HTML-код разрешён.<br>
+        <div id="view" class="view">Текст</div>
+    </div> 
+    <div class="table">
+        <p>Кликните на ячейку таблицы, чтобы редактировать её. Нажмите ОК или ОТМЕНА, когда закончите.</p>
+
+    <table id="bagua-table">
+        <tr>
+        <th colspan="3">Квадрат <em>Bagua</em>: Направление, Элемент, Цвет, Значение</th>
+        </tr>
+        <tr>
+        <td class="nw"><strong>Северо-Запад</strong>
+            <br>Металл
+            <br>Серебро
+            <br>Старейшины
+        </td>
+        <td class="n"><strong>Север</strong>
+            <br>Вода
+            <br>Синий
+            <br>Перемены
+        </td>
+        <td class="ne"><strong>Северо-Восток</strong>
+            <br>Земля
+            <br>Жёлтый
+            <br>Направление
+        </td>
+        </tr>
+        <tr>
+        <td class="w"><strong>Запад</strong>
+            <br>Металл
+            <br>Золото
+            <br>Молодость
+        </td>
+        <td class="c"><strong>Центр</strong>
+            <br>Всё
+            <br>Пурпурный
+            <br>Гармония
+        </td>
+        <td class="e"><strong>Восток</strong>
+            <br>Дерево
+            <br>Синий
+            <br>Будущее
+        </td>
+        </tr>
+        <tr>
+        <td class="sw"><strong>Юго-Запад</strong>
+            <br>Земля
+            <br>Коричневый
+            <br>Спокойствие
+        </td>
+        <td class="s"><strong>Юг</strong>
+            <br>Огонь
+            <br>Оранжевый
+            <br>Слава
+        </td>
+        <td class="se"><strong>Юго-Восток</strong>
+            <br>Дерево
+            <br>Зеленый
+            <br>Роман
+        </td>
+        </tr>
+
+    </table>
+</div>
+<div class="calcult">
+    Депозитный калькулятор.
+  
+    <form name="calculator" class="calcultform">
+      <table>
+        <tr>
+          <td>Первоначальный депозит</td>
+          <td>
+            <input name="money" type="number" value="10000" class="inpf" required>
+          </td>
+        </tr>
+        <tr>
+          <td>Срок вклада?</td>
+          <td>
+            <select name="months" class="inpf">
+              <option value="3">3 мес.(минимум)</option>
+              <option value="6">6 мес.(полгода)</option>
+              <option value="12" selected>12 мес.(год)</option>
+              <option value="18">18 мес.(1.5 года)</option>
+              <option value="24">24 мес.(2 года)</option>
+              <option value="30">30 мес.(2.5 года)</option>
+              <option value="36">36 мес.(3 года)</option>
+              <option value="60">60 мес.(5 лет)</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Годовая процентная ставка?</td>
+          <td>
+            <input name="interest" type="number" value="5" class="inpf" required>
+          </td>
+        </tr>
+      </table>
+  
+  
+    </form>
+  
+  
+    <table id="diagram">
+      <tr>
+        <th>Было:</th>
+        <th>Станет:</th>
+      </tr>
+      <tr>
+        <th id="money-before"></th>
+        <th id="money-after"></th>
+      </tr>
+      <td>
+        <div style="background: red;width:40px;height:100px"></div>
+      </td>
+      <td>
+        <div style="background: green;width:40px;height:0" id="height-after"></div>
+      </td>
+    </table>
+</div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
